@@ -1,0 +1,77 @@
+{
+	"projects": {
+		"listed": [{
+			"id": 1,
+			"name": "Rafael Labbe",
+			"image": "home_hero.jpg",
+			"content": "home.php",
+			"category": "",
+			"subcategories": [],
+			"description": "Designer, Developer, Creative."
+		}, {
+			"id": 3,
+			"name": "Sightsy",
+			"image": "sightsy_hero.jpg",
+			"content": "sightsy.php",
+			"category": "web",
+			"subcategories": ["api","javascript","ajax","jquery"],
+			"description": "Sightsy is an easy to use travel companion tool used to help users book hotels and find local hotspots and events."
+		}, {
+			"id": 4,
+			"name": "Children's Neuroblastoma Cancer Foundation",
+			"image": "cncf_hero.jpg",
+			"content": "cncf.php",
+			"category": "web",
+			"subcategories": ["ui/ux","logo","branding"],
+			"description": "Teaming up with several web designers, we aimed to restructure and redesign the CNCF website."
+		}, {
+			"id": 5,
+			"name": "UCF Recreation and Wellness Center",
+			"image": "rwc_hero.jpg",
+			"content": "rwc.php",
+			"category": "graphic",
+			"subcategories": ["poster","illustration","photography","shirt","social media"],
+			"description": "Safe, Clean, Dependable, Quality, and Fun. The RWC encourages students to live a healthy lifestyle and have fun while exploring new ways to be active."
+		}, {
+			"id": 6,
+			"name": "RWC Adventure Race 2018",
+			"image": "adventure_hero.jpg",
+			"content": "adventure.php",
+			"category": "graphic",
+			"subcategories": ["poster","shirt","social media","logo"],
+			"description": "Designed with a dinosaur theme in mind, the annual RWC Adventure Race takes students around campus in a scavenger hunt style event."
+		}, {
+			"id": 7,
+			"name": "Slice & Dice",
+			"image": "slicedice_hero.jpg",
+			"content": "slicedice.php",
+			"category": "graphic",
+			"subcategories": ["packaging","illustration","logo"],
+			"description": "Eat. Drink. Play. Slice & Dice is a drinking board game incorporated onto a pizza box. The ultimate party experience."
+		}, {
+			"id": 8,
+			"name": "Booklet Designs",
+			"image": "booklet_hero.jpg",
+			"content": "booklet.php",
+			"category": "graphic",
+			"subcategories": ["booklet"],
+			"description": "A selection of booklet designs created for several projects."
+		}],
+		"unlisted": [{
+			"id": 2,
+			"name": "Other Projects",
+			"image": "rusty.jpg",
+			"content": "misc.php",
+			"category": "graphic",
+			"subcategories": ["web","javascript","jquery","packaging","illustration","ui/ux","app"],
+			"description": ""
+		}],
+		"template": [{
+			"name": "",
+			"content": ".php",
+			"category": "",
+			"subcategories": [],
+			"description": ""
+		}]
+	}
+}

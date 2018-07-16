@@ -1,0 +1,186 @@
+{
+	"projects": {
+		"listed" : [{
+			"facility": "Outdoor Adventure",
+			"name": "Comb Jelly Night Paddle",
+			"image": "combjelly.jpg",
+			"thumb": "combjellythumb.jpg",
+			"cat": "poster"
+		},{
+			"facility": "Outdoor Adventure",
+			"name": "Evening Hike",
+			"image": "eveninghike.jpg",
+			"thumb": "eveninghikethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Adventure Race 2018",
+			"image": "ar2018.jpg",
+			"thumb": "ar2018thumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Halloween Knight Climb",
+			"image": "halloween.jpg",
+			"thumb": "halloweenthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Freshmen Learn to Surf",
+			"image": "surf.jpg",
+			"thumb": "surfthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Open Knight Climb",
+			"image": "openclimb.jpg",
+			"thumb": "openclimbthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Colorado Ski & Snowboard Trip",
+			"image": "colorado.jpg",
+			"thumb": "coloradothumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Aquatics",
+			"name": "Private Swim leson",
+			"image": "swim.jpg",
+			"thumb": "swimthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Aquatics",
+			"name": "Lifeguard Certification",
+			"image": "lifeguard.jpg",
+			"thumb": "lifeguardthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Ultimate Frisbee",
+			"image": "frisbee.jpg",
+			"thumb": "frisbeethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Touranment Showcase",
+			"image": "imshowcase.jpg",
+			"thumb": "imshowcasethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sport",
+			"name": "Dodgeball: Last Knight Standing",
+			"image": "dodgeball.jpg",
+			"thumb": "dodgeballthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Wiffleball",
+			"image": "wiffle.jpg",
+			"thumb": "wifflethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Flag Football Preseason Overtime Challenge",
+			"image": "overtime.jpg",
+			"thumb": "overtimethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Fitness",
+			"name": "Yoga Under the Stars",
+			"image": "yogastars.jpg",
+			"thumb": "yogastarsthumb.jpg",
+			"cat": "poster"
+		}, {
+			"name": "2018-2019 Sport Clubs Shirt",
+			"image": "sportclubs.jpg",
+			"thumb": "sportclubsthumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "Sport Clubs Shirt Logo",
+			"image": "sportclubslogo.jpg",
+			"thumb": "sportclubslogothumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "Goodbye Poster - Brittney",
+			"image": "brittney.jpg",
+			"thumb": "brittneythumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "Goodbye Poster - Tiana",
+			"image": "tiana.jpg",
+			"thumb": "tianathumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "Summer 2018 Knights Leadership Series Calendar",
+			"image": "kls.jpg",
+			"thumb": "klsthumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "KLS More Than Sports Flyer",
+			"image": "morethansports.jpg",
+			"thumb": "morethansportsthumb.jpg",
+			"cat": "misc"
+		}, {
+			"name": "The Art & Science of Diversity Flyer",
+			"image": "diversity.jpg",
+			"thumb": "diversitythumb.jpg",
+			"cat": "misc"
+		}],
+		"unlisted" : [{
+			"facility": "Intramural Sports",
+			"name": "Racquetball Ladder",
+			"image": "racquetball.jpg",
+			"thumb": "racquetballthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Badminton",
+			"image": "badminton.jpg",
+			"thumb": "badmintonthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "Sand Volleyball",
+			"image": "volleyball.jpg",
+			"thumb": "volleyballthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Intramural Sports",
+			"name": "3 on 3 Soccer",
+			"image": "soccer.jpg",
+			"thumb": "soccerthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Wekiva River Canoeing Trip",
+			"image": "wekiva.jpg",
+			"thumb": "wekivathumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Outdoor Adventure",
+			"name": "Adaptive Surf Trip",
+			"image": "adaptive.jpg",
+			"thumb": "adaptivethumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Fitness",
+			"name": "Group Exercise Mashup",
+			"image": "mashup.jpg",
+			"thumb": "mashupthumb.jpg",
+			"cat": "poster"
+		}],
+		"template" : [{
+			"facility": "",
+			"name": "",
+			"image": ".jpg",
+			"thumb": "thumb.jpg",
+			"cat": ""
+		}, {
+			"facility": "",
+			"name": "",
+			"image": ".jpg",
+			"thumb": "thumb.jpg",
+			"cat": ""
+		}]
+	}
+}

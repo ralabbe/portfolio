@@ -1,0 +1,401 @@
+/* General Styling */
+
+	h1 {
+		font-size: 2em;
+	}
+
+	.ucf-brand {
+		background-color: #ffc904;
+		color: black;
+		padding: 2px 5px;
+		font-weight: bold;
+	}
+
+	.h-icon { /* Heading icons */
+		width: 50px;
+		vertical-align: baseline;
+	}
+
+	a[download] {
+		padding: 0 !important;
+	}
+
+	.scroll-button {
+		border-radius: 25px;
+	}
+
+/* Loading */
+
+	.newpageload {
+		background-color: white;
+		right: 0;
+	}
+
+	.newpageload img {
+		opacity: .2;
+		width: 100px;
+		animation: rotation 1s linear infinite;
+	}
+
+/* UI Kit edits */
+
+	.uk-button-secondary {
+		background-color: #1a1a1a !important;
+	}
+
+	.uk-text-bold {
+		color: #1a1a1a;
+	}
+
+	.uk-button {
+		transition: opacity .2s !important;
+	}
+
+	.uk-button svg {
+		margin-top: -4px;
+	}
+
+	.uk-link-text {
+		text-decoration: underline;
+	}
+
+	.uk-label {
+		text-transform: lowercase
+	}
+
+	.uk-card {
+		border-radius: 10px;
+	}
+
+
+/* Lightbox edits */
+
+	.uk-lightbox-toolbar {
+		background-color: rgba(0,0,0,0);
+	}
+
+	.uk-lightbox-toolbar button {
+		background-color: black;
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	div[uk-lightbox] img {
+		transition: opacity .3s;
+		box-shadow: 0 0 15px rgba(0,0,0,.3);
+	}
+
+
+/* Owl Carousel edits */
+
+	.owl-carousel {
+		padding-top: 30px !important;
+	}
+
+	.owl-carousel img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		opacity: .7;
+		transition: filter .3s, opacity .3s
+	}
+
+/* Nav */
+
+	.project-nav {
+		margin-top: 65px;
+		margin-left: 115px;
+		position: fixed;
+	}
+
+	.project-nav a {
+		-webkit-transition: opacity .2s, border-bottom .3s !important; /* Safari */
+	    transition: opacity .2s, border-bottom .3s !important;
+		color: black !important;
+		border: 2px solid rgba(0,0,0,0);
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.uk-navbar-container {
+		width: 400px !important;
+	}
+
+/* Logo */
+
+	.logoContainer {
+		z-index: 1000;
+		height: default;
+		cursor: pointer;
+		animation: logoMove .3s ease-in 1.3s forwards; /* Logo moves */
+		-webkit-transition: transform .3s !important;
+		transition: transform .3s !important;
+	}
+
+	.logo {
+		background-image: url("../img/logos/logo.png");
+		background-size: 100%;
+		height: 70px;
+		width: 70px;
+		animation: fadeIn .5s ease-out forwards; /* Logo fades in */
+	}
+
+	.logo-bg {
+		background-color: #1a1a1a;
+		height: 300vh;
+		width: 300vh;
+		animation: zoomIn .7s ease-in .5s forwards; /* Logo background resize */
+	}
+
+
+/* Info Container */
+
+	.project-side-container {
+		position: fixed;
+		background-color: white;
+		cursor: default;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.project-cycle{
+		cursor: pointer;
+		border: 1px solid #1a1a1a;
+		color: #1a1a1a;
+		-webkit-transition: background-color .3s, color .3s !important;
+		transition: background-color .3s, color .3s !important;
+	}
+
+	.project-cycle-mobile {
+		bottom: 60px !important;
+	}
+
+	#proj-name {
+		letter-spacing: -1px;
+	}
+
+
+/* Project Container */
+	.project-container {
+		border-left: 1px solid #ddd;
+		z-index:-1;
+		overflow: hidden;
+	}
+
+	.projContent {
+		width: 100% !important;
+	}
+
+
+/* RWC Page */
+
+	#rwc1 {
+		background-color: #ffc904;
+		padding: 5% 0 5% 0;
+	}
+
+	#rwc1 .uk-text-meta {
+		color: #1a1a1a;
+	}
+
+	#rwc1 h1 {
+		font-size: 2em !important;
+		color: white;
+	 	background-color: #1a1a1a;
+	 	padding: 10px;
+		margin-top: 10px !important;
+		-ms-transform: skew(0deg,-1deg); /* IE 9 */
+		-webkit-transform: skew(0deg,-1deg); /* Safari */
+		transform: skew(0deg,-1deg); /* Standard syntax */
+	 }
+
+	#rwc1 .owl-carousel {
+		background-color: white;
+		-ms-transform: skew(0deg,-1deg); /* IE 9 */
+		-webkit-transform: skew(0deg,-1deg); /* Safari */
+		transform: skew(0deg,-1deg); /* Standard syntax */
+	}
+
+	#rwc2 {
+		background-color: #1a1a1a;
+		padding: 5% 0 5% 0;
+	}
+
+	#rwc2 h1 {
+		font-size: 2em !important;
+		color: #1a1a1a;
+	 	background-color: #ffc904;
+	 	padding: 10px;
+		margin-top: 10px !important;
+		-ms-transform: skew(0deg,1deg); /* IE 9 */
+		-webkit-transform: skew(0deg,1deg); /* Safari */
+		transform: skew(0deg,1deg); /* Standard syntax */
+	 }
+
+	#rwc2 .owl-carousel {
+		background-color: #ffc904;
+		-ms-transform: skew(0deg,1deg); /* IE 9 */
+		-webkit-transform: skew(0deg,1deg); /* Safari */
+		transform: skew(0deg,1deg); /* Standard syntax */
+	}
+
+	#rwc2 .owl-carousel img {
+		height: inherit;
+	}
+
+
+/* Sightsy Page */
+
+	#sightsy1 {
+		background-color: rgba(245,181,55,.9);
+	}
+
+
+/* CNCF Page */
+	#cncf1 {
+		background-color: rgba(0,123,156,.9);
+	}
+
+
+	/* Adventure Page */
+	#adventure1 {
+		background-image: url("../img/adventure/adventurebg1.jpg");
+	}
+
+	#adventure1 hr {
+		background-color: black;
+	}
+
+	#adventure1 .owl-carousel {
+		top:0;
+		transform: translate(0,25%);
+		background-color: white;
+	}
+
+/* Slice & Dice Page */
+	#slicedice1 {
+		background-color: #ff4d4d;
+	}
+
+
+
+/* Meida Queries */
+
+	@media (max-width: 960px) { /* Mobile Only */
+
+		body {
+			position: relative;
+		}
+
+		.newpageload {
+			z-index: 10000 !important;
+		}
+
+		.logo {
+			height: 55px;
+			width: 55px;
+		}
+
+		.project-nav {
+			margin-top: 0;
+			margin-left: 60px;
+			position: absolute;
+		}
+
+		.project-nav a {
+			height: 70px !important;
+		}
+	
+		.project-container {
+			position: relative !important;
+		}
+
+		.mobile-hero {
+			padding: 5vh 5vh 0 5vh;
+		}
+
+		.mobile-container {
+			background-color: white;
+			height: 95vh;
+		}
+
+		.mobile-container-info {
+			width: 80%;
+		}
+
+		#rwc1 .content, #rwc2 .content {
+			padding: 15px !important;
+		}
+
+		.owl-carousel img {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		opacity: 1;
+	}
+
+
+	}
+
+	@media (min-width: 960px) { /* Desktop Only */
+		.logoContainer:hover { /* Rotating logo hover */
+			transform: rotate(25deg);
+		}
+
+		.project-nav a:hover { /* Hover for nav buttons */
+			opacity: .4;
+			border-bottom: 2px solid black;
+		}
+
+		.regularlb img:hover { /* Hover for lightbox images */
+			opacity: .7;
+		}
+
+		.uk-button:hover { /* Hover for button links */
+			opacity: .7;
+		}
+
+		.project-cycle:hover{ /* Hover for project cycling */
+			background-color: #1a1a1a;
+			color: white;
+		}
+
+		.owl-carousel img:hover { /* Owl carousel items over */
+			opacity: 1;
+			-webkit-filter: none;
+			filter: none;
+		}
+	}
+
+/* Animations */
+
+
+	@keyframes fadeIn {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes fadeOut {
+		from {opacity: 1;}
+		to {opacity: 0;}
+	}
+
+	@keyframes zoomIn {
+		from {height: 300vh; width: 300vh;}
+		to {height: 0px; width: 0px;}
+	}
+
+	@keyframes logoMove {
+		from {width:100%;}
+		to {width: 70px; height: 70px; min-height: 70px; margin: 30px 0 0 30px;}
+	}
+
+	@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(360deg);}
+	}
+
+
+.test {
+	background-color: blue;
+}
