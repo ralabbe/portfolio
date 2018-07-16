@@ -23,6 +23,12 @@
 				<p><a href="./files/RafaelLabbe_Portfolio.pdf" target="_blank" class="uk-button uk-button-secondary uk-width-4-5">Portfolio</a><a href="./files/RafaelLabbe_Portfolio.pdf" class="uk-button uk-button-secondary uk-width-1-5" uk-icon="icon: download" download></a></p>
 
 				<p><a href="./files/RafaelLabbe_Resume.pdf" target="_blank" class="uk-button uk-button-secondary uk-width-4-5">Resume</a><a href="./files/RafaelLabbe_Resume.pdf" class="uk-button uk-button-secondary uk-width-1-5" uk-icon="icon: download" download></a></p>
+				
+				<p>
+					<h3 class="uk-card-title">Portfolio Site Code</h3>
+					<hr>
+					<a href="https://github.com/ralabbe/portfolio" target="_blank" class="uk-width-1-1@s uk-width-4-5@m uk-button"><img src="./img/logos/github.png" alt="Github logo"></a>
+				</p>
 			</div>
 		</div>
 	</div>
