@@ -390,6 +390,15 @@
 			background-color: #1a1a1a
 		}
 
+		.contact-close-container {
+			vertical-align: middle;
+		}
+
+		.contact-close-container h3 {
+			vertical-align: middle;
+			color: white
+		}
+
 		#rwc1 .content, #rwc2 .content {
 			padding: 15px !important;
 		}
