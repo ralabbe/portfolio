@@ -9,17 +9,17 @@ include('./inc/nav.php');
 
 <div class="uk-visible@m">
 	<!-- Logo -->
-	<div class="logoContainer uk-position-z-index uk-position-fixed uk-width-1-1" uk-height-viewport>
+	<button class="logoContainer uk-position-z-index uk-position-fixed uk-width-1-1" uk-height-viewport>
 		<div class="logo uk-position-z-index uk-position-center"></div>
 		<div class="logo-bg uk-position-center uk-border-circle"></div>
-	</div>
+</button>
 
 	<!-- Navbar -->
 	<div class="uk-position-top">
 		<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 			<div class="uk-navbar-left uk-position-z-index">
 				<ul class="uk-navbar-nav project-nav uk-text-bold">
-					<li><a href="#contact-page" uk-toggle>Contact</a></li>
+					<li><button class="contact-btn uk-button">Contact</button></li>
 				</ul>
 			</div>
 		</nav>
@@ -39,10 +39,10 @@ include('./inc/nav.php');
 	</div>
 
 	<!-- Project Cycling -->
-	<div class="uk-position-bottom uk-margin-large">
-		<div class="uk-inline-block uk-padding-small uk-border-circle uk-margin-right project-cycle" data-cycle=-1><span uk-icon="arrow-left" data-cycle=-1></span></div>
+	<div class="uk-position-bottom uk-margin-small project-cycle-container">
+		<button class="uk-inline-block uk-padding-small uk-border-circle uk-margin-right project-cycle" data-cycle=-1><span uk-icon="arrow-left" data-cycle=-1></span></button>
 		<div class="uk-margin-large uk-text-large uk-inline-block"><i class="project-counter">-/-</i></div>
-		<div class="uk-inline-block uk-padding-small uk-border-circle uk-margin-left project-cycle" data-cycle=1><span uk-icon="arrow-right" data-cycle=1></span></div>
+		<button class="uk-inline-block uk-padding-small uk-border-circle uk-margin-left project-cycle" data-cycle=1><span uk-icon="arrow-right" data-cycle=1></span></button>
 	</div>
 </div>
 
@@ -59,7 +59,7 @@ include('./inc/nav.php');
 						<div class="uk-padding-small">
 							<div class="logo uk-float-left"></div> <!-- Logo Container -->
 							<ul class="uk-navbar-nav project-nav uk-text-bold">
-								<li><a  href="#contact-page" uk-toggle>Contact</a></li>
+								<li><button class="contact-btn">Contact</button></li>
 							</ul>
 							
 							
@@ -75,10 +75,10 @@ include('./inc/nav.php');
 							
 							</div>
 							<!-- Project Cycling -->
-							<div class="uk-margin-small uk-position-bottom project-cycle-mobile" style="">
-								<div class="uk-inline-block uk-padding-small uk-border-circle uk-margin-right project-cycle" data-cycle=-1><span uk-icon="arrow-left" data-cycle=-1></span></div>
+							<div class="uk-margin-small uk-position-bottom project-cycle-mobile project-cycle-container">
+								<button class="uk-inline-block uk-padding-small uk-border-circle uk-margin-right project-cycle" data-cycle=-1><span uk-icon="arrow-left" data-cycle=-1></span></button>
 								<div class="uk-margin uk-text-large uk-inline-block"><i class="project-counter">-/-</i></div>
-								<div class="uk-inline-block uk-padding-small uk-border-circle uk-margin-left project-cycle" data-cycle=1><span uk-icon="arrow-right" data-cycle=1></span></div>
+								<button class="uk-inline-block uk-padding-small uk-border-circle uk-margin-left project-cycle" data-cycle=1><span uk-icon="arrow-right" data-cycle=1></span></button>
 								<br>
 								<span class="uk-text-meta uk-margin-remove"><span uk-icon="icon: triangle-down"></span> Scroll down for more info <span uk-icon="icon: triangle-down"></span></span>
 							</div>
@@ -87,12 +87,11 @@ include('./inc/nav.php');
 				</div> <!-- End mobile info container -->
 			</div> <!-- End hero section -->
 	</div> <!-- End projContent -->
-<div class="uk-margin-large uk-text-center"> <a href="#" class="uk-button uk-button-default scroll-button" uk-scroll>Scroll to top</a></div>
+<div class="uk-margin-large uk-text-center uk-hidden@m scroll-button-container"> <a href="#" class="uk-button uk-button-default scroll-button" uk-scroll>Scroll to top</a></div>
 </div> <!-- End project-container -->
 
 
 
 <?php
-include('./inc/contact.php'); // Contact form
 include('./inc/footer.php');
 ?>

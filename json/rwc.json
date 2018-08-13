@@ -44,7 +44,7 @@
 			"cat": "poster"
 		}, {
 			"facility": "Aquatics",
-			"name": "Private Swim leson",
+			"name": "Private Swim Lesson",
 			"image": "swim.jpg",
 			"thumb": "swimthumb.jpg",
 			"cat": "poster"
@@ -53,6 +53,12 @@
 			"name": "Lifeguard Certification",
 			"image": "lifeguard.jpg",
 			"thumb": "lifeguardthumb.jpg",
+			"cat": "poster"
+		}, {
+			"facility": "Aquatics",
+			"name": "Dive-In Football Viewing Party",
+			"image": "divein.jpg",
+			"thumb": "diveinthumb.jpg",
 			"cat": "poster"
 		}, {
 			"facility": "Intramural Sports",

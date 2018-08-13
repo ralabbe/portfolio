@@ -1,7 +1,7 @@
 /* General Styling */
 
 	h1 {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 
 	.ucf-brand {
@@ -22,6 +22,24 @@
 
 	.scroll-button {
 		border-radius: 25px;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	button {
+		background-color: rgba(0,0,0,0);
+		border: none;
+		outline: none;
+	}
+
+	input, textarea {
+		border: 1px solid #999 !important;
+		color: #1a1a1a !important;
+	}
+
+	input:focus, textarea:focus {
+		background-color: rgba(247,247,247,1) !important;
+		font-weight: 500;
 	}
 
 /* Loading */
@@ -48,6 +66,7 @@
 	}
 
 	.uk-button {
+		-webkit-transition: opacity .2s !important;
 		transition: opacity .2s !important;
 	}
 
@@ -81,6 +100,7 @@
 	}
 
 	div[uk-lightbox] img {
+		-webkit-transition: opacity .3s;
 		transition: opacity .3s;
 		box-shadow: 0 0 15px rgba(0,0,0,.3);
 	}
@@ -96,6 +116,7 @@
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		opacity: .7;
+		-webkit-transition: filter .3s, opacity .3s;
 		transition: filter .3s, opacity .3s
 	}
 
@@ -107,13 +128,16 @@
 		position: fixed;
 	}
 
-	.project-nav a {
-		-webkit-transition: opacity .2s, border-bottom .3s !important; /* Safari */
-	    transition: opacity .2s, border-bottom .3s !important;
+	.project-nav button {
 		color: black !important;
+		font-weight: bold;
+		padding: 6px 0;
+		background-color: rgba(0,0,0,0);
 		border: 2px solid rgba(0,0,0,0);
 		user-select: none;
 		-webkit-user-select: none;
+		-webkit-transition: opacity .2s, border-bottom .3s !important; /* Safari */
+	    transition: opacity .2s, border-bottom .3s !important;
 	}
 
 	.uk-navbar-container {
@@ -123,7 +147,7 @@
 /* Logo */
 
 	.logoContainer {
-		z-index: 1000;
+		z-index: 50;
 		height: default;
 		cursor: pointer;
 		animation: logoMove .3s ease-in 1.3s forwards; /* Logo moves */
@@ -173,6 +197,41 @@
 
 	#proj-name {
 		letter-spacing: -1px;
+	}
+
+
+/* Contact Side Container */
+	.contact-side-container {
+		position: fixed;
+		left:0;
+		background-color: #1a1a1a;
+		color: white;
+		cursor: default;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		z-index: 100;
+	}
+
+	.contact-title {
+		color: white;
+	}
+
+	.contact-close {
+		color: #1a1a1a;
+		background-color: white;
+		height: 70px;
+		width: 70px;
+		margin: 30px 0 0 30px;
+		top: 0;
+		left: 0;
+		-webkit-transition: transform .3s !important;
+		transition: transform .3s !important;
+	}
+
+	.contact-close-container {
+		background-color: #1a1a1a;
 	}
 
 
@@ -299,12 +358,13 @@
 
 		.project-nav {
 			margin-top: 0;
-			margin-left: 60px;
+			margin-left: 70px;
 			position: absolute;
 		}
 
-		.project-nav a {
+		.project-nav button {
 			height: 70px !important;
+			font-size: 1em;
 		}
 	
 		.project-container {
@@ -324,6 +384,12 @@
 			width: 80%;
 		}
 
+		.contact-close {
+			margin: 0;
+			color: white;
+			background-color: #1a1a1a
+		}
+
 		#rwc1 .content, #rwc2 .content {
 			padding: 15px !important;
 		}
@@ -338,11 +404,11 @@
 	}
 
 	@media (min-width: 960px) { /* Desktop Only */
-		.logoContainer:hover { /* Rotating logo hover */
+		.logoContainer:hover, .contact-close:hover { /* Rotating logo hover */
 			transform: rotate(25deg);
 		}
 
-		.project-nav a:hover { /* Hover for nav buttons */
+		.project-nav button:hover { /* Hover for nav buttons */
 			opacity: .4;
 			border-bottom: 2px solid black;
 		}

@@ -1,0 +1,674 @@
+body {
+    font-family: "Raleway", sans-serif;
+    animation-name: fadeInUp;
+    animation-duration: .6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+a:hover {
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/home-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.dropdown-menu a {
+    color: #333;
+    padding: 10px;
+}
+
+
+#accordion a {
+    color: #333;
+}
+
+#accordion .card {
+    background-color: #feba03;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#accordion .card-body {
+    background-color: white;
+}
+
+
+ul.navbar-nav {
+	width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-img {
+    width: 90%;
+    color: black;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+#header-1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.stages {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+h4 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+h5 {
+    width: 90%;
+    margin: 0 auto;
+
+    margin-bottom: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+
+}
+
+.hero {
+    height: 75vh;
+}
+
+.hero h2 {
+    color: white;
+    text-shadow: 2px 2px #333;
+    margin-top: -10%;
+
+}
+
+.hero .btn {
+    margin: 0;
+}
+
+
+
+.hero p {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -3%;
+    color: white;
+    text-shadow: 2px 2px #333;
+}
+
+#heroText {
+    padding-left: 10%;
+}
+
+#hero-desc {
+    margin-top:-2%;
+    text-shadow: none;
+}
+
+
+
+p { width: 90%;
+margin: 0 auto;
+margin-bottom: 5%;}
+
+.article-img {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-desc {
+    
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+}
+
+.patient-btns {
+    width: 90%;
+    margin: 0 auto;
+    font-size: .3em;
+}
+
+.patient-btns .btn {
+    margin: 10px;
+}
+
+.stages .btn {
+    margin: 10px;
+}
+
+
+
+footer p {
+    width: 80%;
+    font-size: .7em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    padding: 5px;
+
+}
+
+footer ul {
+    width: 50%;
+    font-size: .7em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#donateheader {
+    max-width: 50vw;
+}
+
+
+.donateheader h1 {
+    margin-top: 20px;
+    color: #212529;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+.billingsection {
+    margin-top: 30px;
+}
+
+.billingwrapper .btn {
+    cursor: pointer;
+}
+
+.otherDonationForm {
+    height: 60px;
+    max-width: 400px;
+    text-indent: 50px;
+    font-size: 3em;
+}
+
+.hide {
+    display: none;
+}
+
+#dollarSign {
+    font-size: 3.5em;
+    margin: 0;
+    position: absolute;
+    top: 7%;
+}
+
+#other-back-to-amounts {
+    background-color: #ffd009;
+    border-color: #ffd009;
+    margin-bottom: 30px;
+     height: 60px;
+    width: 100px;
+
+}
+
+.billingsection {
+    font-family: Verdana;
+
+}
+
+.amt-btn {
+    background-color: #ffd009;
+    border-color: #ffe20d;
+    height: 60px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+.btn-primary.active {
+    background-color: #feba03;
+    border-color: #feba03;
+}
+
+.btn-primary:hover {
+    background-color: #feba03;
+    border-color: #feba03;
+}
+
+
+
+@media (max-width: 450px) { 
+
+.otherBoxXs {
+    max-width: 220px;
+}
+
+}
+
+@media (max-width: 375px) {
+    .margin-when-small {
+    margin-top: 10px;
+    
+}
+
+} 
+
+/* Checkboxes */
+.checkboxsection {
+    margin-top: 40px;
+}
+
+
+.stackchecks {
+    display: block;
+    font-size: 1.25em;
+}
+
+
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+/* Payment method area*/
+    
+.sect-seperators {
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 350px) {
+    .pay-meth-btn {
+        margin-top: 20px;
+        width: 300px;
+        height: 50px;
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+        color: #8c97aa;
+    }
+}
+
+@media screen and (max-width: 350px) and (min-width: 266px) {
+    .pay-meth-btn {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+        color: #8c97aa;
+
+    }
+}
+
+.form-spacing {
+    margin-top: 10px;
+}
+
+.card-info {
+    margin-top: 60px;
+}
+
+div#home-card {
+    width: 75%;
+    margin-left: 12.5%;
+    top: -50px;
+    text-align: center;
+}
+
+/***** Start Owl Carousel *****/
+
+.owl-carousel {
+    margin-left: 12.5%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel-wrap {
+    margin: auto;
+    padding: 0 5%;
+    position: relative;
+}
+
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+.owl-nav>div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+    width: 6% !important;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+    width: 6% !important;
+}
+
+.owl-nav i {
+    color: #646464;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-nav .owl-next i {
+    right: 0;
+}
+
+.owl-nav .owl-next {
+    right: 0px;
+    width: 32.33333%;
+    background: linear-gradient(to left, white 40%, transparent 140%);
+    top: 0;
+    margin: 0;
+    height: 100%;
+    box-shadow: 0px 0px 85px 13px rgba(255, 255, 255, 0.62);
+}
+
+.owl-nav .owl-prev {
+    left: 0;
+    background: -moz-linear-gradient(to left, white 40%, transparent 140%);
+    background: -webkit-linear-gradient(to left, white 40%, transparent 140%);
+    background: linear-gradient(to right, white 40%, transparent 140%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+    height: 100%;
+    top: 0;
+    margin-top: 0;
+    width: 32.33333%;
+    box-shadow: 0px 0px 85px 13px rgba(255, 255, 255, 0.62);
+}
+
+/***** End Owl Carousel *****/
+
+
+
+@media screen and (max-width: 2000px) and (min-width: 420px) {
+.donate-btn {
+    
+    margin-top: 30px;
+    height: 100px;
+    width: 400px;
+    background-color: #feba03;
+    border-color: #feba03;
+}
+
+}
+
+@media screen and (max-width: 420px) and (min-width: 266px) {
+    .donate-btn {
+    
+    margin-top: 10px;
+    height: 100px;
+    width: 85%;
+    background-color: #feba03;
+    border-color: #feba03;
+}
+
+}
+
+.donate-btn:hover {
+    background-color: #fedc02;
+    border-color: #fedc02;
+}
+
+/*End Donate*/
+
+/***** Start Footer *****/
+footer {
+    background-color: #007b9c;
+    color: white;
+    width: 100%;
+    padding: 50px;
+}
+
+footer a, footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    width: 80%;
+    font-size: .7em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    padding: 5px;
+}
+
+footer ul {
+    width: 50%;
+    font-size: .7em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    width: 25px;
+}
+
+/***** End Footer *****/
+
+.content {
+    max-width: 1400px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 5vh 7vh;
+}
+
+.infocard {
+    background-color: #007b9c;
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: white;
+    font-family: Raleway;
+    margin: 0 0 10% 10%;
+}
+
+.genericCard {
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    font-family: Raleway;
+    color: white;
+    display: inline-block;
+    background-color: #007b9c;
+    vertical-align: top;
+    margin-bottom: 1vh;
+}
+
+.genericCard a {
+    background-color:#ffe20d;
+    display: inline-block;
+    padding: 11px 35px 11px 30px;
+    font-weight: bold;
+    font-family: Raleway;
+    border-radius: 20px 15px 30px 15px;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.genericCard a:hover {
+    background-color:#feba03;
+    text-decoration: none;
+}
+
+.genericCard2 {
+    display: inline-block;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    font-family: Raleway;
+    border: 1px solid #aaa;
+}
+
+h3 {
+    margin: 0;
+    font-family: Amatic SC;
+    font-size: 3em;
+}
+
+.doctorsHero {
+    width: 100%;
+    padding: 20vh 0 0 0;
+    background:url("../img/patient.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.resourcesHero {
+    width: 100%;
+    padding: 20vh 0 0 0;
+    background:url("../img/resources.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 992px) { 
+
+    #donate-header {
+        margin-top: 12%;
+        margin-bottom: -5%;
+    }
+
+    #page-title-1 {
+        width: 30% !important;
+        margin-top:5% !important;
+    }
+
+    .header-img {
+    width: 90% !important;
+    height: 55vh;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3%;
+    
+    }
+
+
+
+    .hero p {
+    width: 40%;
+    margin-left: 5%;
+    color: white;
+    text-shadow: 2px 2px #333;
+    }
+
+    #header-1  {
+        width: 20%;
+        margin: 0 auto;
+        margin-top: -15%;
+    }
+
+    .logo img {
+    width: 40%;
+    margin-bottom: -10%;
+    }
+
+    .article {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .article-img {
+        width: 25%;
+        
+        float: left;
+    }
+
+    .navbar-brand {
+    width: 50%;
+}
+
+    
+}
+
+@media screen and (max-width: 420px) and (min-width: 266px) {
+.donate-btn {
+    
+    margin-top: 10px;
+    height: 100px;
+    width: 85%;
+    background-color: #feba03;
+    border-color: #feba03;
+}
+
+}
+
+.bottom-spacing {
+    margin-bottom: 100px;
+}

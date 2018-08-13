@@ -2,13 +2,15 @@
 // Create variables before document load
 // ===
 var projects = [], // Array for projects from JSON file
-	projIndex = 0, // Array for project cycling
-	rwcDesigns = []; // Array for RWC designs from JSON file
+	projIndex = 1, // Array for project cycling
+	rwcDesigns = [], // Array for RWC designs from JSON file
+	hero = $("#hero-section"); // Puts hero section into a variable
+	
 
 // ===
 // Add projects to array via AJAX call from JSON file
 // ===
-$.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed projects
+$.getJSON("./json/projects.json", data =>{ // AJAX call to find all listed projects
 	var listed = data.projects.listed;
 	// Adds each project to an array for future use.
 	for (i in listed) {
@@ -16,7 +18,7 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 		projects.push(proj);
 	}
 }).done(()=>{ // When projects array is complete, activate another AJAX call
-	$.getJSON("./json/rwc.json", (data)=>{ // AJAX call to find all listed rwc projects
+	$.getJSON("./json/rwc.json", data =>{ // AJAX call to find all listed rwc projects
 		var listed = data.projects.listed;
 		
 		for (i in listed) { // Adds each project to an array for future use.
@@ -80,11 +82,11 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 			// Project number cycling
 			// ===
 			// Left/right button clicks
-			$("body").on("click", ".project-cycle", (e)=>{ // Click listener to update current project with project cycling.
+			$("body").on("click", ".project-cycle", e =>{ // Click listener to update current project with project cycling.
 				var x = e.target; // Grabs clicked element sent in as a parameter
 				var num = $(x).data("cycle"); // Grabs cycle data (number attached to button)
 				if (num == null) { // If UI Kit Icon is clicked, grab data from the closest div (prevents grabbing data from the icon's polyline)
-					num = $(x).closest("div").data("cycle");
+					num = $(x).closest("button").data("cycle");
 				}
 				updateIndex(num); // Update project index with cycle data
 			}); // End project cycling
@@ -102,7 +104,7 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 
 			// Logo press resets cycle to 0
 			$("body").on("click", ".logo", ()=>{
-				projIndex = 0;
+				projIndex = 1;
 				window.scrollTo(0,0); // Scrolls to the top of the page
 				updatePage(projIndex); // Update page
 			});
@@ -118,8 +120,8 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 
 			function projCycleNum(num) {
 				if (num >= Object.keys(projects).length) { // If index is longer than project array length, set to 0
-					num = 0;
-				} else if (num < 0) { // If index is less than 0, set to end of array
+					num = 1;
+				} else if (num < 1) { // If index is less than 0, set to end of array
 					num = Object.keys(projects).length - 1;
 				}
 				return num;
@@ -134,14 +136,20 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 
 				projActive = projects[num]; // Target project within array based on index
 
-				var hero = $("#hero-section"); // Puts hero section into a variable
 				$("#projContent").empty(); // Empties out projContent content
-				$("#projContent").append(hero); // Loads hero section using variable from earlier
 
-				$.get("./projects/" + projActive.content).done((data)=>{ // AJAX call to JSON file to grab project html content and update side bar with project info
-					
+				if (num == 0) { // If contact page is being shown
+					$(".scroll-button-container").hide(); // Hide scroll button
+					$(".project-counter").empty(); // Empty project counter
+				} else {
+					$(".scroll-button-container").show(); // Show scroll button
+					$("#projContent").append(hero); // Loads hero section using variable from earlier if not on contact page
+					$(".project-counter").html((projIndex) + "/"+ (Object.keys(projects).length - 1)); // Appends number of projects between next/back buttons
+				}
+
+				$.get("./pages/" + projActive.content).done(data =>{ // AJAX call to JSON file to grab project html content and update side bar with project info
+				
 					$("#projContent").append(data); // Loads page sections using data received from AJAX call
-					$(".project-counter").html((projIndex + 1) + "/"+ Object.keys(projects).length) // Appends number of projects between next/back buttons
 
 					$(".proj-name").html(projActive.name); // Appends name
 					$(".proj-description").html(projActive.description); // Appends description
@@ -172,6 +180,14 @@ $.getJSON("./json/projects.json", (data)=>{ // AJAX call to find all listed proj
 			// ---
 			// Contact Form
 			// ---
+			$("body").on("click", ".contact-btn", ()=>{
+				updatePage(0); // Update page to contact page
+			})
+
+			$("body").on("click", ".contact-close", ()=>{
+				updatePage(projIndex); // Update page with projIndex
+			})
+
 			$("body").on("click", ".uk-modal-close", ()=>{
 				var data = $("#contact-form").serializeArray(); // Grabs form data and puts it into an array
 				var name = data[0].value,

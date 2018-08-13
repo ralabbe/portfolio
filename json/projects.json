@@ -1,6 +1,14 @@
 {
 	"projects": {
 		"listed": [{
+			"id": 0,
+			"name": "Let's connect!",
+			"image": "",
+			"content": "contact.php",
+			"category": "",
+			"subcategories": [],
+			"description": "Shoot me an email or text if you have any questions on my design choices, workflow, interests, freelancing opportunitie, or whatever's on your mind."
+		}, {
 			"id": 1,
 			"name": "Rafael Labbe",
 			"image": "home_hero.jpg",
@@ -31,7 +39,7 @@
 			"content": "rwc.php",
 			"category": "graphic",
 			"subcategories": ["poster","illustration","photography","shirt","social media"],
-			"description": "Safe, Clean, Dependable, Quality, and Fun. The RWC encourages students to live a healthy lifestyle and have fun while exploring new ways to be active."
+			"description": "Safe, Clean, Dependable, Quality, Fun. The RWC encourages living a healthy lifestyle while exploring fun new ways to be active."
 		}, {
 			"id": 6,
 			"name": "RWC Adventure Race 2018",
