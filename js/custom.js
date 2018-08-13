@@ -188,7 +188,8 @@ $.getJSON("./json/projects.json", data =>{ // AJAX call to find all listed proje
 				updatePage(projIndex); // Update page with projIndex
 			})
 
-			$("body").on("click", ".uk-modal-close", ()=>{
+			$("body").on("submit", "#contact-form", (e)=>{
+				e.preventDefault();
 				var data = $("#contact-form").serializeArray(); // Grabs form data and puts it into an array
 				var name = data[0].value,
 					email = data[1].value,
@@ -202,6 +203,8 @@ $.getJSON("./json/projects.json", data =>{ // AJAX call to find all listed proje
 						email: email,
 						message: message
 					}
+				}).done(()=>{
+					updatePage(projIndex); // Update page with projIndex
 				}); // End email send AJAX call
 			});
 
