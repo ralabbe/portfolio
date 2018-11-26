@@ -1,6 +1,6 @@
 # Portfolio
 
-Code included in this repository is for my professional website located at [www.rafaellabbe.com](http://rafaellabbe.com/)
+Code included in this repository is for my [professional website](http://rafaellabbe.com/).
 It features custom CSS and JavaScript while taking advantage of jQuery, AJAX, and JSON for quickly updating the page without reloads. The site is fully functional and is mobile responsive.
 
 # Structure
